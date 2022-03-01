@@ -1,0 +1,104 @@
+$font-text: 'Noto Sans', 'Open Sans', sans-serif;
+$color-white: #FFFFFF;
+$color-back:#6e6d6d;
+$font-size:0.9rem;
+
+ion-card {
+    text-align: center;
+    font-family: $font-text;
+}
+
+ion-card img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ion-card-title {
+    color: $color-white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    position: absolute;
+    top: 10%;
+    left: 28%
+}
+
+.ion-card-icon {
+    position: absolute;
+    top: 11%;
+    right: 31px;
+    font-size: 22px;
+    color: #9683c6;
+}
+
+ion-card-content {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+ion-card-content input {
+    background-color: #c190ea !important;
+    flex-basis: 100%;
+    border: none;
+    padding: 12px;
+    margin: 0 5px;
+    border-radius: 5px;
+    color: $color-white;
+}
+
+ion-card-content input::placeholder {
+    color: $color-white !important;
+    opacity: 1;
+    font-size: $font-size;
+}
+
+ion-card-content input:first-child {
+    margin-bottom: 10px;
+}
+
+ion-card-login-number {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ion-card-login-number a{
+    color: $color-back;
+    font-size: $font-size;
+    flex-basis: 100%;
+}
+
+.forgotpassword {
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+ion-card-login {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ion-card-login button{
+    margin: 50px 50px 30px 50px;
+    padding: 9px;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, #55128a, #5e28d6);
+    color: $color-white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    flex-basis: 100%;
+}
+
+ion-card-singup {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+ion-card-singup span a{
+   text-decoration: none;
+   color: #fd9b01;
+   flex-basis: 100%;
+}
