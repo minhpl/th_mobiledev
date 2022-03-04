@@ -1,0 +1,13 @@
+<ion-content>
+  <header>
+    <ion-title>Ngành</ion-title>
+    <img src="./../../../assets/images/Rectangle4.png" alt="">
+  </header>
+  <ion-card *ngFor="let item of dataForCard">
+    <ion-card-header>
+      <ion-card-title>{{item.title}}</ion-card-title>
+      <ion-card-subtitle>{{item.subtitle}}</ion-card-subtitle>
+      <span class="ion-card-course">{{item.span}}</span>
+    </ion-card-header>
+  </ion-card>
+</ion-content>

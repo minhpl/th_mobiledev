@@ -1,73 +1,20 @@
-<ion-content fullscreen="true">
-    <header>
-      <ion-title >Gợi ý</ion-title>
-      <ion-subtitle >Cho bạn</ion-subtitle>
-    </header>
-    <ion-slides [options]="ios">
-        <ion-slide>
-          <ion-card>
-            <img src="./../../../assets/images/card1-.png" alt="">
-            <ion-card-content>
-                <ion-card-price>
-                  <span>399,000đ</span>
-                  <p>500.000đ</p>
-                </ion-card-price>
-                <icon-card-btn>
-                  <button>MUA</button>
-                </icon-card-btn>
-            </ion-card-content>
-          </ion-card>
-        </ion-slide>
-        <ion-slide>
-          <ion-card>
-            <img src="./../../../assets/images/card1-.png" alt="">
-            <ion-card-content>
-                <ion-card-price>
-                  <span>399,000đ</span>
-                  <p>500,000đ</p>
-                </ion-card-price>
-                <icon-card-btn>
-                  <button>MUA</button>
-                </icon-card-btn>
-            </ion-card-content>
-          </ion-card>
-        </ion-slide> 
-    </ion-slides>
-    <div class="popular">
-      <ion-title class="title">Phổ biến nhất</ion-title>
-      <ion-subtitle class="subtitle">Xu hướng học tập của thời đại</ion-subtitle>
-    </div>
-    <!-- <ion-slides [options]="ioss">
-      <ion-slide>
-        <ion-card>
-          <img src="./../../../assets/images/card1-.png" alt="">
-        </ion-card>
-        <ion-card>
-          <img src="./../../../assets/images/card1-.png" alt="">
-        </ion-card>
-        <ion-card>
-          <img src="./../../../assets/images/card1-.png" alt="">
-        </ion-card>
-      </ion-slide>
-    </ion-slides> -->
-    <ion-tabs>
-      <ion-tab-bar slot="bottom">
-        <ion-tab-button tab="tab1">
-          <ion-icon name="flash"></ion-icon>
-          <ion-label>Khám phá</ion-label>
-        </ion-tab-button>
-        <ion-tab-button tab="tab2">
-          <ion-icon name="apps"></ion-icon>
-          <ion-label>Ngành</ion-label>
-        </ion-tab-button>
-        <ion-tab-button tab="tab3">
-          <ion-icon name="send"></ion-icon>
-          <ion-label>Khóa học của tôi</ion-label>
-        </ion-tab-button>
-        <ion-tab-button tab="tab3">
-          <ion-icon name="search"></ion-icon>
-          <ion-label>Tìm kiếm</ion-label>
-        </ion-tab-button>
-      </ion-tab-bar>
-    </ion-tabs>
-</ion-content>
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="discover">
+      <ion-icon name="flash"></ion-icon>
+      <ion-label>Khám phá</ion-label>
+    </ion-tab-button>
+    <ion-tab-button tab="branch">
+      <ion-icon name="apps"></ion-icon>
+      <ion-label>Ngành</ion-label>
+    </ion-tab-button>
+    <ion-tab-button tab="course">
+      <ion-icon name="send"></ion-icon>
+      <ion-label>Khóa học của tôi</ion-label>
+    </ion-tab-button>
+    <ion-tab-button tab="search">
+      <ion-icon name="search"></ion-icon>
+      <ion-label>Tìm kiếm</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

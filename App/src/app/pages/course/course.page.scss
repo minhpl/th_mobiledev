@@ -1,0 +1,21 @@
+$font-size-title: 1.1rem;
+$font-size-text: 0.9rem;
+$font-weight:600;
+$color-text:#ffffff;
+
+ion-card {
+    --ion-background-color:transparent;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    position: relative;
+}
+
+
+ion-card-title {
+    font-size: $font-size-title;
+    color: $color-text;
+    font-weight: $font-weight;
+    position: absolute;
+    top: 10px;
+    left: 25px;
+}
