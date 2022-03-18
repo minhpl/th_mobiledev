@@ -9,11 +9,20 @@ const routes: Routes = [
     component: HomePage,
     children: [
       {
+        path: '',
+        redirectTo: 'home/discover',
+        pathMatch: 'full'
+      },
+      {
         path: 'branch',
         loadChildren:() => import('../branch/branch.module').then( m => m.BranchPageModule)
       },
       {
         path: 'search',
+        loadChildren:() => import('../search/search.module').then( m => m.SearchPageModule)
+      },
+      {
+        path: 'search/:id',
         loadChildren:() => import('../search/search.module').then( m => m.SearchPageModule)
       },
       {
@@ -26,11 +35,6 @@ const routes: Routes = [
       },
     ]
   },
-      {
-        path: '',
-        redirectTo: 'home/discover',
-        pathMatch: 'full'
-      },
 ];
 
 @NgModule({

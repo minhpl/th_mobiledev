@@ -1,0 +1,106 @@
+<ion-content fullscreen>
+  <ion-card class="ion-no-margin">
+    <ion-title>Chọn phương thức thanh toán</ion-title>
+    <a routerLink="/payment"><ion-icon name="chevron-back-outline"></ion-icon></a>
+    <img src="../../../assets/images/wave.png" alt="">
+  </ion-card>
+  <ion-list>
+      <ion-radio-group name="auto" value="tesla">
+        <ion-list-header> MOMO WALLET</ion-list-header>
+        <ion-item>
+          <ion-avatar slot="start">
+            <img class="ion-avatar" src="../../../assets/images/momo1.png" />
+          </ion-avatar>
+          <ion-label>
+            <h2>MOMO wallet</h2>
+            <p>Thanh toán nhanh trong 5 giây bằng cách dùng ứng dụng Momo quét mã QR</p>
+          </ion-label>
+          <ion-radio value="1"></ion-radio>
+        </ion-item>
+        <ion-list-header> CREDIT/DEBIT/CARD</ion-list-header>
+        <ion-item>
+          <ion-avatar slot="start">
+            <img class="ion-avatar" src="../../../assets/images/momo2.png" />
+          </ion-avatar>
+          <ion-label>
+            <h2>Credit/Debit/Card</h2>
+            <p>Thanh toán nhanh trong 5 giây bằng cách dùng ứng dụng Momo quét mã QR</p>
+          </ion-label>
+          <ion-radio value="2"></ion-radio>
+        </ion-item>
+        <ion-list-header> LOCAL ATM CARDS</ion-list-header>
+        <ion-item>
+          <ion-avatar slot="start">
+            <img class="ion-avatar" src="../../../assets/images/momo3.png" />
+          </ion-avatar>
+          <ion-label>
+            <h2>LOCAL ATM CARDS</h2>
+            <p>Thanh toán nhanh trong 5 giây bằng cách dùng ứng dụng Momo quét mã QR</p>
+          </ion-label>
+          <ion-radio value="3"></ion-radio>
+        </ion-item>
+        <ion-list-header> BANK TRASFER</ion-list-header>
+        <ion-item class="ion-item-bank">
+          <ion-avatar slot="start">
+            <img class=".img-bank" src="../../../assets/images/momo4.png" />
+          </ion-avatar>
+          <ion-label>
+            <h2>BANK TRASFER</h2>
+            <p>Thanh toán nhanh trong 5 giây bằng cách dùng ứng dụng Momo quét mã QR</p>
+          </ion-label>
+          <ion-item>
+            <ion-select>
+              <ion-select-option value="peperoni">Peperoni</ion-select-option>
+              <ion-select-option value="hawaii">Hawaii</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-item>
+      </ion-radio-group>
+  </ion-list>
+
+  <ion-list class="ion-list-price">
+    <ion-list-header> TỔNG </ion-list-header>
+    <ion-item class="prcie">
+      <ion-label>
+        <h2>Giá gốc</h2>
+        <h3>399,000đ</h3>
+      </ion-label>
+    </ion-item>
+    <ion-item class="prcie">
+      <ion-label>
+        <h2>Giảm giá</h2>
+        <h3>399,000đ</h3>
+      </ion-label>
+    </ion-item>
+    <ion-item class="prcie">
+      <ion-label>
+        <h2>Mã khuyến học</h2>
+        <h3>399,000đ</h3>
+      </ion-label>
+    </ion-item>
+    <ion-item class="prcie">
+      <ion-label class="total-price">
+        <h2>Tổng giá</h2>
+        <h3>399,000đ</h3>
+      </ion-label>
+    </ion-item>
+    <ion-item class="prcie">
+      <ion-avatar slot="start">
+        <img src="../../../assets/images/Layer7.png" />
+      </ion-avatar>
+      <ion-label class="total-price">
+        <p>Cam kết hoàn tiền khi khách hàng không hài lòng</p>
+      </ion-label>
+    </ion-item>
+    <ion-item class="prcie">
+      <ion-avatar slot="start">
+        <img src="../../../assets/images/Layer8.png" />
+      </ion-avatar>
+      <ion-label class="total-price">
+        <p>Edumail 100% bảo vệ khách hàng</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+  <button class="btn-submit" routerLink="/method">Thực hiện</button>
+</ion-content>
+

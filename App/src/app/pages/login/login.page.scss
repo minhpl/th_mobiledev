@@ -9,10 +9,10 @@ ion-card {
     --ion-background-color:transparent;
     box-shadow: none !important;
     border-radius: 0 !important;
+    position: relative;
 }
 
 ion-card img {
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,8 +24,9 @@ ion-card-title {
     font-size: 1.5rem;
     font-weight: 700;
     position: absolute;
-    top: 10%;
-    left: 28%
+    top: 13%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .ion-card-icon {

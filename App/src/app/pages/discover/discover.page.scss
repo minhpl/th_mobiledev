@@ -26,48 +26,48 @@ ion-content {
         top: 20px;
     }
     
-    ion-slide {
-        ion-card {
-            --ion-background-color: #e7dbf4 !important;
-            border-radius: 10px;
-            img {
-                width: 100%;
-                height: 270px;
+ion-card {
+    --ion-background-color: #e7dbf4 !important;
+    border-radius: 10px;
+    
+    img {
+        width: 100%;
+        height: 270px;
+    }
+
+    ion-card-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .ion-card-price {
+            span {
+                font-size: 1rem;
+                color: $color-text;
+                font-weight: $font-weight;
+                
             }
 
-            ion-card-content {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-
-                .ion-card-price {
-                    span {
-                        font-size: 1rem;
-                        color: $color-text;
-                        font-weight: $font-weight;
-                    }
-
-                    p {
-                        font-size: 0.9rem;
-                        color: $color-text;
-                        font-weight: $font-weight;
-                        text-decoration: line-through;
-                        margin-left: -7px;
-                    }
-                }
-
-                .icon-card-btn {
-                    button {
-                        padding: 13px 28px;
-                        border-radius: 7px;
-                        border: 2px solid $color-text;
-                        color: $color-text;
-                        font-weight: $font-weight;
-                    }
-                }
+            p {
+                font-size: 0.9rem;
+                color: $color-text;
+                font-weight: $font-weight;
+                text-decoration: line-through;
+               
             }
         }
-    }     
+
+        .icon-card-btn {
+            button {
+                padding: 13px 28px;
+                border-radius: 7px;
+                border: 2px solid $color-text;
+                color: $color-text;
+                font-weight: $font-weight;
+            }
+        }
+    }
+}    
 }
 
 .popular {
@@ -84,14 +84,4 @@ ion-content {
     img {
         border-radius: 15px;
     }
-}
-
-
-ion-tab-bar {
-    --ion-background-color: #551aa5 !important;
-    // height: 10%;
-    z-index: 99;
-    // position: absolute;
-    bottom: 10px;
-    
 }

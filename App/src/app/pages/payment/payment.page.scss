@@ -1,0 +1,104 @@
+$font-size-title: 1.3rem;
+$font-size-text: 0.9rem;
+$font-weight:600;
+$color-text:#ffffff;
+$color-text-label: #340064;
+
+ion-content {
+    text-align: center;
+
+    .btn-submit { 
+        text-decoration: none;
+        color: $color-text;
+        font-size: $font-size-text;
+        padding: 10px 12px;
+        border-radius: 15px;
+        background-image: linear-gradient(to bottom, #401188,#770bc4);
+        margin-bottom: 10px;
+    }
+}
+
+ion-card {
+    position: relative;
+    --ion-background-color:transparent;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    img {
+        width: 100%;
+        height: 100px;
+    }
+
+    a {
+        position: absolute;
+        top: 40%;
+        transform: translateY(-50%);
+        left: 20px;
+        font-size: 1.2rem;
+        color: #e6aa5f;
+    }
+}
+
+ion-item {
+    --ion-border-color: #ffffff ;
+    margin-bottom: 5px;
+}
+
+ion-title {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $color-text;
+    font-size: $font-size-title;
+    font-weight: $font-weight;
+}
+
+ion-list-header {
+    font-size: $font-size-text;
+    color: #6b3bb3;
+    font-weight: $font-weight;
+}
+
+ion-label {
+    h2 {
+        font-size: $font-size-text;
+        color: $color-text-label;
+        font-weight: $font-weight;
+    }
+}
+
+.ion-label-text {
+    display: flex;
+    h3 {
+        font-size: $font-size-text;
+        color: $color-text-label;
+        font-weight: $font-weight;
+    }
+    p {
+        text-decoration: line-through;
+        font-size: $font-size-text;
+        color: #333;
+        margin-left: 6px;
+    }
+    .text {
+        text-decoration: none;
+    }
+}
+
+.prcie ion-label{
+    border-bottom: 1px solid #bdb0c8;
+    display: flex;
+    justify-content: space-between;
+    h2 {
+        color: #bf91e8;
+        font-weight: 400;
+    }
+    h3 {
+        color: $color-text-label;
+        font-weight: $font-weight;
+    }
+}
+
+.total-price {
+    border-color: #ffffff !important;
+}

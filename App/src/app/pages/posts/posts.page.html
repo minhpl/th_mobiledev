@@ -1,0 +1,68 @@
+<ion-content>
+  <ion-card class="ion-no-margin">
+      <iframe width="100%" height="250" 
+        src="https://www.youtube.com/embed/xTY0SlyVfCQ" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; 
+        autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+      <ion-card-header>
+        <ion-card-title>Chăm sóc dạ dày và hệ tiêu hóa chủ động</ion-card-title>
+        <ion-card-subtitle>Giảm tình trạng đau bụng âm ỉ, đầy bụng,ợ hơi, ợ nóng khi bị đau dạ dày</ion-card-subtitle>
+        <button class="ion-card-btn">Ngũ tạng</button>
+        <div class="ion-card-text">
+            <div class="view">
+                  <ion-icon name="alarm-outline"></ion-icon>
+                  <span>04:04:00</span>
+                  <ion-icon name="caret-forward-outline"></ion-icon>
+                  <span>56988</span>
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>4.9</span>
+            </div>
+            <div class="time">
+                  <span>Thời gian tạo 06.05.2020</span>
+                  <span>Thời gian cập nhật: 31.12.2021</span>
+            </div>
+        </div>
+      </ion-card-header>
+      <!-- <ion-tabs>
+        <ion-tab-bar >
+          <ion-tab-button tab="about">
+            <ion-label>Về chúng tôi</ion-label>
+          </ion-tab-button>     
+          <ion-tab-button tab="lesson">
+            <ion-label>Bài học</ion-label>
+          </ion-tab-button>
+          <ion-tab-button tab="document">
+            <ion-label>Tài liệu</ion-label>
+          </ion-tab-button>
+        </ion-tab-bar>
+      </ion-tabs> -->
+
+      <div class="ion-tabs">
+        <ion-grid class="ion-tab-header">
+            <ion-row >
+                <ion-col>
+                    <button (click)="onClick()">VỀ CHÚNG TÔI</button>
+                </ion-col>
+                <ion-col>
+                  <button (click)="onClick2()">BÀI HỌC</button>
+                </ion-col>
+                <ion-col>
+                  <button (click)="onClick3()">TÀI LIỆU</button>
+              </ion-col>
+            </ion-row>
+        </ion-grid>
+        <div class="ion-tab-text">
+            <span>{{text}}</span>
+        </div>
+      </div>
+      <div class="ion-content-total">
+          <ion-label>
+            <h2>500,000đ</h2>
+            <h4>900,000đ</h4>
+          </ion-label>
+          <button>Mua ngay</button>
+      </div>
+  </ion-card>
+</ion-content>

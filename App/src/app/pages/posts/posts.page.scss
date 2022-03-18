@@ -1,0 +1,135 @@
+$font-size-title: 1.3rem;
+$font-size-text: 0.7rem;
+$font-weight:600;
+$color-text:#ffffff;
+$color-text-label: #340064;
+
+ion-card {
+    --ion-background-color:transparent;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+}
+
+
+ion-card-title {
+    font-size: $font-size-title;
+    color: $color-text-label;
+    font-weight: $font-weight;
+}
+
+ion-card-subtitle {
+    font-size: $font-size-text; 
+    color: $color-text-label;   
+}
+
+.ion-card-btn {
+    margin-top: 10px;
+    background-image: linear-gradient(to bottom, #401188,#770bc4);
+}
+
+// ion-card-header {
+//     margin-bottom: 50px;
+// }
+
+.view {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    ion-icon {
+        font-size: 1.1rem;
+        color: $color-text-label;
+        margin-right: 3px;
+    }
+    span {
+        margin-right: 15px;
+        color: $color-text-label;
+        font-size: $font-size-text;
+    }
+}
+
+.time {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    span {
+        color: $color-text-label;
+        font-size: $font-size-text;
+    }
+}
+
+.ion-tabs {
+    margin-bottom: 70px;
+}
+
+.ion-tab-header {
+    background-image: linear-gradient(to bottom, #401188,#770bc4);
+    button {
+        font-size: 0.8rem;
+        color: $color-text;
+        border-radius: 0;
+        border: none;
+        width: 100%;
+    };
+
+
+}
+
+// .ion-tab-header button:first-child {
+
+// }
+
+.ion-tab-text {
+    margin: 10px;
+    color: $color-text-label;
+    font-size: $font-size-text;
+}
+
+.ion-tab-text span {
+    margin: 0 5px;
+}
+
+
+ion-label {
+    h2,h4 {
+        color: $color-text;
+        margin-left: 10px;
+        
+    }
+
+    h2 {
+        font-weight: $font-weight;
+        font-size: 1rem;
+    }
+
+    h4 {
+        text-decoration: line-through;
+        font-size: $font-size-text;
+    }
+}
+
+.ion-content-total{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background-image: linear-gradient(to bottom, #401188,#770bc4);
+}
+
+button {
+    background-color: transparent;
+    border-radius: 15px;
+    border: 1px solid $color-text;
+    width: 80px;
+    height: 30px;
+    color: $color-text;
+    font-size: $font-size-text;
+    font-weight: $font-weight;
+    margin-right: 10px;
+}
+
+

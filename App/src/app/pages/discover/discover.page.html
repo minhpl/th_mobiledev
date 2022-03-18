@@ -3,7 +3,7 @@
         <ion-title >Gợi ý</ion-title>
         <div class="ion-subtitle">Cho bạn</div>
       </header>
-      <ion-slides [options]="ios">
+      <!-- <ion-slides [options]="ios">
           <ion-slide *ngFor="let item of dataForCard">
               <ion-card>
                 <img src={{item.img}} alt="">
@@ -18,17 +18,40 @@
                 </ion-card-content>
               </ion-card>
           </ion-slide>
-      </ion-slides>
+      </ion-slides> -->
+      <swiper #swiper [config]="swiperConfig">
+            <ng-template *ngFor="let item of dataForCard" swiperSlide>
+              <ion-card>
+                <img src={{item.img}} alt="">
+                <ion-card-content>
+                    <div class="ion-card-price">
+                      <span>{{item.price}}</span>
+                      <p>{{item.priceold}}</p>
+                    </div>
+                    <div class="icon-card-btn">
+                      <button>{{item.btn}}</button>
+                    </div>
+                </ion-card-content>
+              </ion-card>
+            </ng-template>
+      </swiper>
       <div class="popular">
         <ion-title class="title">Phổ biến nhất</ion-title>
         <div div class="ion-subtitle">Xu hướng học tập của thời đại</div>
       </div>
-      <ion-slides [options]="ioss">
+      <!-- <ion-slides [options]="ioss">
         <ion-slide *ngFor="let item of dataForCard2">
           <ion-card class="ion-card-popular">
             <img  src="{{item.img}}" alt="">
           </ion-card>
         </ion-slide>
-      </ion-slides>
+      </ion-slides> -->
+      <swiper #swiper [config]="swiperConfig">
+        <ng-template *ngFor="let item of dataForCard2" swiperSlide>
+          <ion-card class="ion-card-popular">
+            <img  src="{{item.img}}" alt="">
+          </ion-card>
+        </ng-template>
+  </swiper>
 </ion-content> 
 
